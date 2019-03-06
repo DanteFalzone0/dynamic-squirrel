@@ -16,7 +16,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 """
-NOTE: For this program to work, you must have the files
+NOTE: For this program to work, you must have the files `ballpix`, `trail`,
+`stars0`, and `stars1` in the same folder. These are all PNG images.
 """
 import pygame
 import os
