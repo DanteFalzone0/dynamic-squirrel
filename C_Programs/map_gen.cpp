@@ -30,7 +30,7 @@ I will NOT port this to Microsloth Losedoze.
 
 using namespace std;
 
-cairo_surface_t *surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 500, 500);
+cairo_surface_t *surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 500, 500); // initialize a canvas of 500x500 pixels
 cairo_t *cr = cairo_create(surface);
 
 void draw_green_line(float x0, float y0, float x1, float y1) {
@@ -67,7 +67,7 @@ int which_side() {
 
 
 int main(void) {
-    cairo_set_source_rgb(cr, 0.01, 0.01, 0.01);
+    cairo_set_source_rgb(cr, 0.01, 0.01, 0.01); // make the canvas black
     cairo_paint(cr);
 
     // Draw a border around the map.
