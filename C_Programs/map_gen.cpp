@@ -38,7 +38,7 @@ using namespace std;
 cairo_surface_t *surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 500, 500);
 cairo_t *cr = cairo_create(surface);
 
-void draw_green_line(float x0, float y0, float x1, float y1){
+void draw_green_line(float x0, float y0, float x1, float y1) {
     cairo_set_source_rgb(cr, 0.0, 5.0, 0.2);
     cairo_move_to(cr, x0, y0);
     cairo_line_to(cr, x1, y1);
@@ -47,28 +47,24 @@ void draw_green_line(float x0, float y0, float x1, float y1){
 }
 
 
-int set_pos(){
+// Help determine where the line should start.
+int set_pos() {
     random_device rd;
     uniform_int_distribution<int> dist(0, 500);
     return dist(rd);
 }
 
 
-int change_y() {
+// Pick a new value by which to move when drawing line.
+int change() {
     random_device rd;
     uniform_int_distribution<int> dist(-3, 4);
     return dist(rd);
 }
 
 
-int change_x() {
-    random_device rd;
-    uniform_int_distribution<int> dist(-3, 4);
-    return dist(rd);
-}
-
-
-int which_side() { // Choose which side to start drawing from
+// Choose which side to start drawing from.
+int which_side() {
     random_device rd;
     uniform_int_distribution<int> dist(0, 3); // 0 for top, 1 for left, 2 for bottom, 3 for right
     return dist(rd);
@@ -79,7 +75,7 @@ int main(void) {
     cairo_set_source_rgb(cr, 0.01, 0.01, 0.01);
     cairo_paint(cr);
 
-    // Draw a border around the map
+    // Draw a border around the map.
     draw_green_line(0, 0, 500, 0);
     draw_green_line(500, 0, 500, 500);
     draw_green_line(500, 500, 0, 500);
@@ -92,8 +88,8 @@ int main(void) {
         int ypos = 0;
         
         while (ypos < 500) {
-            int new_xpos = xpos + change_x();
-            int new_ypos = ypos + change_y();
+            int new_xpos = xpos + change();
+            int new_ypos = ypos + change();
             draw_green_line(xpos, ypos, new_xpos, new_ypos);
             xpos = new_xpos;
             ypos = new_ypos;
@@ -103,8 +99,8 @@ int main(void) {
         int ypos = set_pos();
         
         while (xpos < 500) {
-            int new_xpos = xpos + change_x();
-            int new_ypos = ypos + change_y();
+            int new_xpos = xpos + change();
+            int new_ypos = ypos + change();
             draw_green_line(xpos, ypos, new_xpos, new_ypos);
             xpos = new_xpos;
             ypos = new_ypos;
@@ -114,8 +110,8 @@ int main(void) {
         int ypos = 500;
         
         while (ypos > 0) {
-            int new_xpos = xpos + change_x();
-            int new_ypos = ypos - change_y();
+            int new_xpos = xpos + change();
+            int new_ypos = ypos - change();
             draw_green_line(xpos, ypos, new_xpos, new_ypos);
             xpos = new_xpos;
             ypos = new_ypos;
@@ -125,8 +121,8 @@ int main(void) {
         int ypos = set_pos();
         
         while (xpos > 0) {
-            int new_xpos = xpos - change_x();
-            int new_ypos = ypos + change_y();
+            int new_xpos = xpos - change();
+            int new_ypos = ypos + change();
             draw_green_line(xpos, ypos, new_xpos, new_ypos);
             xpos = new_xpos;
             ypos = new_ypos;
