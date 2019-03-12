@@ -1,0 +1,103 @@
+/* ramblings.bs - a collection of nonsensical speculations about programming languages by Dante Falzone. */
+
+using namespace english_words;
+
+I know six languages: English, Chinese, French, Spanish, Python, and C++. I'm highly fluent in English and French
+and merely comfortable in the others.
+
+I have spent a lot of time thinking about linguistics, and I have spent a small amount of time learning to program.
+
+With this, a number of weird, possibly meaningless questions have come to mind:
+    0. How would one speak a programming laguage out loud if one so chose? Suppose I wanted to
+       read out loud the following C++ program:
+       
+       #include <iostream>
+
+       int main(void) {
+           std::cout << "program works\n";
+           return 0;
+       }
+       
+       Is the following how I would read it?
+       
+       Hashtag include iostream.
+       Int main void.
+       Ess-tee-dee see-out program works backslash n.
+       Return zero.
+       
+       Or would I read it like this?
+       
+       Hashtag include open-angle-bracket iostream close-angle-bracket.
+       Int main open-parenthesis void close-parenthesis open-curly-bracket.
+       Ess-tee-dee colon-colon see-out double-open-angle-bracket double-quote program works backslash n double-quote semicolon.
+       Return zero semicolon.
+       Closing-curly-bracket.
+       
+       The first way to read it leaves out a bunch of syntactically significant tokens, but the second way sounds extremely
+       verbose. Which way is right?
+       
+       Of course, it's not like ANSI is about to answer my question anytime soon, considering that programming languages aren't
+       meant to be read out loud anyway.
+       
+       Maybe what matters is what the computer can understand. If you were going to dictate code by voice, you'd have to do it
+       the verbose way; the concise way wouldn't compile.
+       
+    1. Could humans use programming languages with eachother to communicate?
+    
+       *******
+       <Bob>
+       if you.are_willing_to_converse():
+           print("Hello")
+       </Bob>
+
+       <Alice>
+       Hello
+       </Alice>
+       
+       <Bob>
+       print(you.current_state())
+       </Bob>
+       
+       <Alice>
+       good
+       
+       for event in you.recent_life_events:
+           if is_relevant(event):
+               print(event)
+       </Alice>
+       
+       <Bob>
+       yesterday_events = []
+       for event in me.recent_life_events:
+           if event.time_of_occurence in range yesterday:
+               yesterday_events.append(event)
+       assert me.eat(ice_cream) in yesterday_events
+       </Bob>
+       
+       *******
+       
+       I think humans could use programming languages to interact with eachother, but unless we were either communicating by
+       text or found an efficient way to speak them out loud without ambiguity, it'd be awkward. Also, everything that we
+       could talk about would have to be formally defined. This could be accomplished by constructing a dictionary where all
+       words that people use in this language are defined, and assuming that everyone who speaks the language knows the words
+       in the dictionary. The language would also have the advantage of being implemented for highly complex convolutional
+       neural networks that could use algorithmic learning to identify with high confidence and accuracy whether the thing
+       described by a given set of sensory inputs fits the definition of a word.
+       
+       Is this basically what Lojban is? Maybe I should take another shot at learning that, now that I've learned a few
+       programming languages.
+
+    2. Could a person be a native speaker of a programming language?
+    
+       How would that even work?
+       
+       Imagine putting a baby in front of an IDE and having it learn a programming language. I don't think that would work
+       very well.
+       
+       But conceivably, you could hold a baby in your lap and show it the screen while you program. Perhaps the extremely deep
+       and rapidly iterating neural networks in its skull would be able to work out some coherent idea of what is happening on
+       the screen, figuring out the symbols and identifying consistent patterns in them. If you write programs whose output
+       includes lots of movement, flashy colours, and fun sounds, this could be a highly stimulating and fun activity for the
+       baby.
+       
+       Would this practice have any impact on the baby's future aptitude for programming? I'd be very interested to know.
