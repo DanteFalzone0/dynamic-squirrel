@@ -18,8 +18,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-int main(void)
-{
+int main(void) {
     char resource_name[64];
     char units[64];
     char demand[64];
