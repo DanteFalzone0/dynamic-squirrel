@@ -1,0 +1,112 @@
+int lost() {
+    I'm so bored.
+    Classes, clubs, whatever-
+    I can't stand it.
+    It's so pointless.
+    It's boring and I hate it.
+
+    Inside my head
+    my thoughts cry out
+    but my feelings drown them out;
+    I'm not scared of my feelings, but they're holding all my focus;
+    With no exit condition from this infinite loop;
+    Stuck in an unending cycle
+    of fear, and depression, and boredom.
+
+    I don't want to live a life
+    where I have to do all this
+    pointless busywork;
+    where day to day life
+    is a complex swirl of emotions,
+    a roller coaster ride towards oblivion;
+    I'd rather not.
+
+    return me_to(myself);
+}
+
+
+float helloworld() {
+    Back to my usual haunt
+    Wasting time in mindless staring
+    at text more poisonous than strangers glaring;
+    We've all been there;
+    maybe as recently as a few minutes ago.
+    Even when we're not, it wastes our mental space,
+    wastes our sanity;
+    I figured: I should learn how to use this,
+    and not let it continue to use me.
+
+    A quick Google, some hasty keypresses, and there on my screen {
+        print("Hello, world!")
+    }
+    I hit "run", and it runs
+
+    my mind runs with it
+    and I go to learn more;
+    a torrential downpour right into my brain
+    from a huge resevoir I never bothered to open
+    quenching a long-standing thirst;
+    blood pumps through my veins, through my brain
+    as I excitedly type out line after line
+    of beautiful glowing monospaced poetry
+    twisted loops of logic that list out from zero
+    in a language of clear unambiguity
+    in stark contrast to the conflicts in my mind
+    which, for once, are silenced.
+
+    return to_write_just_one_more_line();
+}
+
+
+char command() {
+    I'm finally free from this world I've been trapped in
+    where nothing I say seems to matter and I have no power;
+    Into a world where there's just me, the code, and the computer;
+    Where I can make things exactly how I want
+    How I think they should be.
+
+    I can't overthrow capitalism by myself
+        but I can delete Windows and install Linux.
+
+    I can't rewrite our unjust laws and change the structure of our society
+        but I can rewrite buggy programs and install fresh updates.
+
+    Completely overturning the old system
+    and installing a new one;
+    all the while retaining
+    the knowledge of how to command it
+    and thereby the power to do so;
+    free to roam and create in a world
+    that I can destroy at any moment in just one line of script:
+    "sudo rm -rf / --no-preserve-root"
+    and build back up anew.
+
+    return to_make_something_new();
+}
+
+
+int main() {
+    The computer's lid shuts
+    and I'm abruptly born back into the world;
+    where my desires are secondary at best
+    and my feelings run wild, unchecked
+    a million thoughts, a million tasks
+    an uncertain future, a heartless world
+    one I never wanted to be in,
+    now less than ever;
+
+    In a computer I'm a wizard,
+    but in reality I'm a muggle.
+    People make up messy, complicated rules;
+    rules that are unjust and in *serious* need of update;
+    and then follow them with unpredictable consistency.
+    It's maddeningly frustrating;
+    I don't want to be here
+    any more than before
+    I want to retreat into my computer
+    my respite from this disheartening world
+    and write just a few more lines
+    of shining bright-green code.
+
+    return 0;
+}
