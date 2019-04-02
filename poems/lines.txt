@@ -65,7 +65,7 @@ char command() {
     Where I can make things exactly how I want
     How I think they should be.
 
-    I can't overthrow capitalism by myself
+    I can't change the system by myself
         but I can delete Windows and install Linux.
 
     I can't rewrite our unjust laws and change the structure of our society
