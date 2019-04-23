@@ -1,8 +1,8 @@
-;--------------------------------------------------------------;
-; Program written in x86-64 Assembly for Linux by Dante.       ;
-; Assemble and run with the following command:                 ;
-;     nasm -felf64 greet.asm && gcc -static greet.o && ./a.out ;
-;--------------------------------------------------------------;
+;------------------------------------------------------------------;
+; Program written in x86-64 Assembly for Linux by Dante.           ;
+; Assemble and run with the following command:                     ;
+;     nasm -felf64 greeter.asm && gcc -static greeter.o && ./a.out ;
+;------------------------------------------------------------------;
 
           global    main
           extern    puts
