@@ -1,8 +1,7 @@
 # dynamic-squirrel
 This is Dante Falzone's first Github repository.
 
-Dante Falzone has a decent amount of experience with Python and a decent amount of experience
-with C++. All code published online by Dante before the creation of this repo was either Reddit
+All code published online by Dante before the creation of this repo was either Reddit
 posts or Pastebin pages.
 
 Dante isn't on Reddit anymore, and has never been on any other social media either. The only
