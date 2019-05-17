@@ -1,0 +1,70 @@
+This is a summary of my preferred coding style as of 17 May 2019. I do not assert that this is necessarily better than other ways;
+this is merely how I personally prefer to do it.
+
+0. Indentation with spaces in multiples of four. (For convenience I configure my text editors to bind the tab key to four spaces.)
+
+1. Braces on the same line as the statement to which they correpsond. E.g.:
+
+    int foo() {
+        // statements
+    }
+    
+    if (foo) {
+        //statements
+    }
+    
+    class Foo {
+        // methods and members
+    };
+
+2. Control flow statements should have a space between the keyword and the parenthesis. Functions should have no such space.
+
+3. Code should generally be about 70 characters wide, unless the code has lots of nested scopes or is in Java (since Java
+tends to be very verbose).
+
+4. An infinite while loop should be written as "while (1 == 1)", because this makes more intuitive sense than "while (true)"
+or "while (1)". I don't use "forever" loops (e.g. "for (;;)").
+
+5. I don't generally put arguments in main() unless either the language requires it or I actually need to take shell parameters.
+
+6. To ***define*** a function with a lot of arguments (see rule 3), I do like so:
+
+    int foo(int arg_0,
+            int arg_1,
+            int arg_2,
+            int arg_3,
+            int arg_4,
+            int arg_5,
+            int arg_6) {
+        //statements
+    }
+
+7. To ***call*** a function with a lot of arguments, I do like so:
+
+    foo(
+        arg_0,
+        arg_1,
+        arg_2,
+        arg_3,
+        arg_4,
+        arg_5,
+        arg_6
+    );
+
+8. C-style multiline comments like so:
+
+    /* This is a very long comment. Notice how the
+    opening comment delimeter goes on the first line
+    of the comment, and how the closing delimeter
+    goes on the last line of the comment. */
+
+9. Macros/constants are in ALL_CAPS_WITH_UNDERSCORES, class names are CapitalizedAtTheBeginningOfEachWord, and
+function names and identifiers use the_snake_case_convention_where_you_separate_lowercase_words_with_underscores.
+
+10 variable_or_function_names_or_class_names_for_that_matter_that_are_more_than_like_30_characters_long_are_too_long.
+This is because I prefer to use simple text editors (usually GNU Nano but sometimes Vim) over fancy IDEs, so I don't
+have autocomplete; also, long names tend to make it hard to follow rule 3. (This is also a reason why I don't like
+Java or deeply nested classes.)
+
+11. I am willing to violate these rules... for money. Or when editing someone else's code. But I like my own personal code to
+follow these rules of style.
