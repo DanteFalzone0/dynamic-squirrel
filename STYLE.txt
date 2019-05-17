@@ -22,8 +22,8 @@ this is merely how I personally prefer to do it.
 3. Code should generally be about 70 characters wide, unless the code has lots of nested scopes or is in Java (since Java
 tends to be very verbose).
 
-4. An infinite while loop should be written as "while (1 == 1)", because this makes more intuitive sense than "while (true)"
-or "while (1)". I don't use "forever" loops (e.g. "for (;;)").
+4. An infinite while loop should be written as "while (1 == 1)", because this makes more intuitive sense to me than
+"while (true)" or "while (1)". I don't use "forever" loops (e.g. "for (;;)") because that doesn't seem intuitive at all.
 
 5. I don't generally put arguments in main() unless either the language requires it or I actually need to take shell parameters.
 
