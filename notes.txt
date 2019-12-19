@@ -1,0 +1,32 @@
+** My understanding of the Unix filesystem as of 19 December 2019 **
+
+? = uncertainty; . = certainty
+
+/bin - compiled Unix utilities go here.
+/boot - the bootloader lives here.
+/cdrom - this is where the contents of my optical disk reader are mounted, if I have one.
+/dev - lots of physical devices and other special files live here.
+/etc - configuration files?
+/home - I live here.
+/initrd.img - the binary for the kernel lives here?
+/initrd.img.old - an older version of initrd.img?
+/lib - libraries go here?
+/lib32 - 32-bit libraries go here?
+/lib64 - 64-bit libraries go here?
+/lost+found - if the system crashes, files and directories that would otherwise be lost go here?
+/media - flash drives and other removable storage is mounted here.
+/mnt - anything may be mounted here by root.
+/opt - not sure?
+/proc - process files live here.
+/root - the root user's home directory.
+/run - not sure?
+/sbin - some compiled programs live here?
+/snap - not sure?
+/srv - not sure?
+/swapfile - this is where surplus bits get stored if more virtual memory is needed than actual ram available.
+/sys - not sure?
+/tmp - files that may be deleted without warning go here.
+/usr - most programs and libraries that I didn't write get stored in subdirectories here.
+/var - not sure? I think that email went here on older systems?
+/vmlinuz - kernel image lives here?
+/vmlinuz.old - older version of vmlinuz?
