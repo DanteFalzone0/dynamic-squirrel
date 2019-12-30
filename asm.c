@@ -15,7 +15,7 @@ int main(void) {
        assembly to swap foo and bar. */
     asm (
 
-        "# These next 4 lines are Assembly I wrote."
+        "# These next 4 lines are Assembly I wrote.\n"
       "\t movl  %0,    %%ebx\n" // move foo into ebx
       "\t movl  %1,    %%eax\n" // move bar into eax
       "\t movl  %%eax, %0\n"    // move eax into foo
